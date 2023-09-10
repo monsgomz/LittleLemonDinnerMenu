@@ -23,9 +23,5 @@ struct MenuItem: Identifiable, MenuItemProtocol {
 	var id = UUID()
 	var title: String
 	var ingredients: [Ingredient]
-	var price: Double {
-		// Calculate price based on ingredients or other logic if needed
-		return 0.0 // Replace with actual price calculation
-	}
-
+	var price: Double = 0.0
 }

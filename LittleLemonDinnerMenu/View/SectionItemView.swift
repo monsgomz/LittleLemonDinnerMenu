@@ -17,16 +17,16 @@ struct SectionItemView: View {
 		Text(title)
 			.font(.title2)
 			.frame(width: 360, alignment: .leading)
-			.padding(10)
-		
 		LazyVGrid(columns: columns) {
 			ForEach(foodSelection){ element in
 				VStack(){
-//					NavigationLink(destination:MenuItemsOptionView(), element.title)){
-//						Rectangle().size(width: 120, height: 100)
-//						Text(element.title)
-//					}
-//
+					NavigationLink {
+						MenuItemDetailsView(item: element)
+					} label: {
+						Rectangle().size(width: 120, height: 100)
+					}.foregroundColor(.black)
+					Text(element.title)
+					
 				}.frame(width:130, height:120)
 					.padding(4)
 					

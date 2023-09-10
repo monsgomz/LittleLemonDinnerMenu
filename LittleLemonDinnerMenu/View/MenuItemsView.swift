@@ -33,7 +33,6 @@ struct MenuItemsView: View {
 
 		}
 		
-		
 	}
 }
 
